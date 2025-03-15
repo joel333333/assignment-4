@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+.grid-container {
+    display: grid;
+   grid-template-areas: "header header header"
+   "sidebar content content"
+   "footer footer footer";
+   grid-template-columns: 1fr 2fr;
+    grid-gap: 10px;
+    padding: 10px;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 8vh;
+    background-color: #fdedec;
+    font-family: 'Poppins', sans-serif;
+    padding: 10px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 90px;
+}
+nav ul li {
+    padding: 15px 10px;
+    position: relative;
+    display: flex;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+nav ul li a:hover {
+    color: #000000;
+}
+
+header {
+    grid-area: header;
+}
+.sidebar{
+    grid-area: sidebar;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    top: 0%;
+    z-index: 1;
+    background-color: #fdedec;
+    border-radius: 10px;
+}
+.sidebar ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 40px;
+}
+.sidebar ul li {
+    padding: 15px 10px;
+    position: relative;
+    display: flex;
+}
+.sidebar ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 2em;
+}
+
+.sidebar ul li a:hover {
+    color: #000000;
+}
+.content h2{
+    display: block;
+}
+.content {
+    grid-area: content;
+    display: flex;
+    padding: 10px;
+    justify-content: space-around;
+    background-color: #fdedec;
+    border-radius: 10px;
+}
+img{
+    width: 500px;
+    min-height: 600px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.footer{
+    grid-area: footer;
+    background-color: #fdedec;
+}
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+    background-color: #fdedec;
+}
+
+.footer .footer-content .footer-section ul{
+    list-style: none;
+}
+
+.footer .footer-content .footer-section ul li{
+    padding: 5px;
+}
+.footer .footer-content .footer-section ul a{
+    text-decoration: none;
+    color: #333;
+}
+.footer .footer-content .footer-section ul a:hover{
+    color: #000000;
+}
+.footer .footer-content:nth-child(1) {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    color: #333;
+    border-radius: 10px;
+}
