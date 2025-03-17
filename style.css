@@ -48,12 +48,14 @@ header {
 .sidebar{
     grid-area: sidebar;
     display: flex;
+    grid-template-columns: 1fr;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    position: relative;
-    top: 0%;
-    z-index: 1;
+    position: fixed;
+    top: 95px;
+    width: 200px;
+    height: 543px;
     background-color: #fdedec;
     border-radius: 10px;
 }
@@ -90,8 +92,8 @@ header {
     border-radius: 10px;
 }
 img{
-    width: 500px;
-    min-height: 600px;
+    width: 400px;
+    min-height: 500px;
     margin: 10px;
     border-radius: 10px;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
